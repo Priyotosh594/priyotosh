@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f6d365;
+}
+
+#yesButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#noButton {
+    background-color: #f44336;
+    color: white;
+    position: relative;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4CAF50;
+    visibility: hidden;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #message {
+        font-size: 18px;
+    }
+}
